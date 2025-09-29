@@ -1,0 +1,19 @@
+.footer {
+  text-align: center;
+  padding: var(--spacing-medium);
+  background-color: var(--color-primary);
+  color: white;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  direction: rtl; /* چون فارسی */
+  word-break: break-word; /* جلوگیری از چسبیدن کلمات */
+  line-height: 1.5; /* بهتر شدن خوانایی */
+}
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: 0.85rem; /* کمی کوچکتر برای موبایل */
+    padding: calc(var(--spacing-medium) / 2);
+    margin-top: 30px;
+  }
+}

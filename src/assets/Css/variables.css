@@ -1,0 +1,16 @@
+:root {
+    --color-primary: #e91e63;
+    --color-secondary: #4caf50;
+    --color-background: #fafafa;
+    --color-text-primary: #212121;
+    --color-text-secondary: #757575;
+  
+    --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+  
+    --border-radius: 6px;
+  }
+  

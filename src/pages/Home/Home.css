@@ -1,0 +1,135 @@
+.home {
+  padding: var(--spacing-large);
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  direction: rtl; /* اضافه کردم برای فارسی */
+}
+
+.home__hero {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  padding: var(--spacing-large);
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  margin-bottom: var(--spacing-large);
+}
+
+.home__title {
+  font-size: 2.8rem;
+  margin-bottom: var(--spacing-medium);
+}
+
+.home__subtitle {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-large);
+  line-height: 1.4;
+}
+
+.home__btn {
+  font-size: 1.1rem;
+  padding: var(--spacing-medium) var(--spacing-large);
+  border-radius: var(--border-radius);
+  background-color: white;
+  color: var(--color-primary);
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.home__btn:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.home__features {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-large);
+  flex-wrap: wrap;
+}
+
+.feature {
+  background-color: white;
+  padding: var(--spacing-medium);
+  flex: 1 1 30%;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-6px);
+}
+
+.feature h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-small);
+  font-size: 1.3rem;
+}
+
+.feature p {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .home__features {
+    flex-direction: column;
+    gap: var(--spacing-medium);
+  }
+
+  .feature {
+    flex: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding: var(--spacing-medium);
+  }
+  
+  .home__hero {
+    padding: var(--spacing-medium);
+  }
+
+  .home__title {
+    font-size: 2.4rem;
+  }
+
+  .home__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .feature {
+    padding: var(--spacing-small);
+  }
+
+  .feature h3 {
+    font-size: 1.1rem;
+  }
+
+  .feature p {
+    font-size: 0.95rem;
+  }
+
+  .home__btn {
+    padding: var(--spacing-small) var(--spacing-medium);
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 400px) {
+  .home__title {
+    font-size: 2rem;
+  }
+
+  .home__subtitle {
+    font-size: 1rem;
+  }
+}

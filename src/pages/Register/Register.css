@@ -1,0 +1,42 @@
+.register {
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+  
+  .register h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-medium);
+    text-align: center;
+  }
+  
+  .register__form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register__form label {
+    margin-bottom: var(--spacing-medium);
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+  
+  .register__form input,
+  .register__form textarea {
+    margin-top: 4px;
+    padding: var(--spacing-small);
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    resize: vertical;
+    width: 100%;
+  }
+  
+  .register__form button {
+    align-self: center;
+    width: 120px;
+    margin-top: var(--spacing-medium);
+  }
